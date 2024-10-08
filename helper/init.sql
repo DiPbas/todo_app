@@ -1,7 +1,7 @@
 -- init.sql
 
 -- Maak de database aan (deze stap is optioneel, omdat we deze al hebben gespecificeerd in docker-compose)
-CREATE DATABASE todo_db;
+CREATE DATABASE IF NOT EXISTS todo_db;
 
 -- Gebruik de database
 \c todo_db;

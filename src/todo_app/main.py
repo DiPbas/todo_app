@@ -4,6 +4,6 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root() -> str:
-    
+async def root() -> dict:
+
     return {"message": "Hello World"}

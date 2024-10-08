@@ -12,6 +12,13 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./helper/init.sql:/docker-entrypoint-initdb.d/init.sql  # Koppeling naar het initialisatie script
     ports:
-      - "5432:5432"                 
+      - "5432:5432" 
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+
 volumes:
   postgres_data:
