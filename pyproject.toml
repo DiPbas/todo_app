@@ -1,0 +1,31 @@
+[project]
+name = "todo-app"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "DiPbas", email = "bas.verburg@digital-power.com" }
+]
+dependencies = [
+    "fastapi[standard]>=0.115.0",
+    "sqlalchemy>=2.0.35",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
+
+[tool.rye.scripts]
+dev = {cmd = "fastapi dev src/todo_app/main.py"}
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/todo_app"]

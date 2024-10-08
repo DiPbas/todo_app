@@ -1,0 +1,10 @@
+rye init : starten rye project
+rye add <package>: pip install within rye
+rye sync : after rye add to update pyproject.toml
+rye fmt : auto format project
+rye fetch 3.10 : install and set python version to 3.10 within the project
+rye show: show rye project 
+
+Sub rye project in project
+via workspace in pyproject.toml kan sub project als member toevoegen.
+
