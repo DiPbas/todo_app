@@ -1,16 +1,14 @@
-version: '3.8'
-
 services:
   postgres:
     image: postgres:latest
     container_name: postgres_db
     environment:
       POSTGRES_DB: todo_db         
-      POSTGRES_USER: user          
-      POSTGRES_PASSWORD: password   
+      POSTGRES_USER: bas          
+      POSTGRES_PASSWORD: bas   
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./helper/init.sql:/docker-entrypoint-initdb.d/init.sql  # Koppeling naar het initialisatie script
+      - ./helper/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432" 
   api:
@@ -19,6 +17,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+    environment:
+      DEBUG: 1
+    volumes:
+      - ./src/todo_app:/src/todo_app
+    restart: always
 
 volumes:
   postgres_data:
