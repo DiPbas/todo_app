@@ -54,6 +54,7 @@ markupsafe==3.0.0
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
+psycopg2==2.9.10
 psycopg2-binary==2.9.9
 pydantic==2.9.2
     # via fastapi
