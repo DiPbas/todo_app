@@ -8,6 +8,9 @@ authors = [
 dependencies = [
     "fastapi[standard]>=0.115.0",
     "sqlalchemy>=2.0.35",
+    "sqlmodel>=0.0.22",
+    "psycopg2-binary>=2.9.9",
+    "psycopg2>=2.9.10",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

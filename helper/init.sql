@@ -1,28 +1,38 @@
 -- init.sql
 
--- Maak de database aan (deze stap is optioneel, omdat we deze al hebben gespecificeerd in docker-compose)
-CREATE DATABASE IF NOT EXISTS todo_db;
-
--- Gebruik de database
 \c todo_db;
 
--- Maak de todo tabel aan
-CREATE TABLE IF NOT EXISTS todo (
+-- Maak een tabel voor de users
+CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
-    date DATE NOT NULL,
-    task VARCHAR(255) NOT NULL,
-    done BOOLEAN DEFAULT FALSE
+    --username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    hashed_password VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Vul de tabel met 10 dummy rows
-INSERT INTO todo (date, task, done) VALUES
-('2024-10-01', 'Buy groceries', FALSE),
-('2024-10-02', 'Read a book', TRUE),
-('2024-10-03', 'Go for a walk', FALSE),
-('2024-10-04', 'Finish project report', TRUE),
-('2024-10-05', 'Cook dinner', FALSE),
-('2024-10-06', 'Clean the house', FALSE),
-('2024-10-07', 'Watch a movie', TRUE),
-('2024-10-08', 'Workout', FALSE),
-('2024-10-09', 'Attend a meeting', TRUE),
-('2024-10-10', 'Call a friend', FALSE);
+-- Maak een tabel voor de todo lists, met een foreign key naar de users tabel
+CREATE TABLE IF NOT EXISTS todo (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    date DATE NOT NULL,
+    task VARCHAR(255) NOT NULL,
+    done BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+
+-- Voeg voorbeeldgebruikers toe
+INSERT INTO users (email) 
+VALUES 
+('bas@example.com'),
+('jane@example.com');
+
+-- Voeg to-do items toe voor deze gebruikers
+INSERT INTO todo (user_id, date, task, done) 
+VALUES 
+(1, '2024-10-08', 'Finish FastAPI project', FALSE),
+(1, '2024-10-09', 'Buy groceries', TRUE),
+(2, '2024-10-10', 'Prepare for meeting', FALSE),
+(2, '2024-10-11', 'Call the client', FALSE);
+
