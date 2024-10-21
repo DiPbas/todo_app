@@ -6,7 +6,7 @@ from . import models, schemas
 
 
 def get_password_hash(password):
-    return password + 'hashed'
+    return password + "hashed"
 
 
 def get_user(db: Session, user_id: int):

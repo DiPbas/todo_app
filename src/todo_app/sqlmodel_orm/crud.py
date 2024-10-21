@@ -11,11 +11,13 @@ from .models import Users, Todo
 def get_password_hash(password: str) -> str:
     return password + "geheim"
 
+
 # Get a user by id
 
 
 def get_user(db: Session, user_id: int) -> Optional[Users]:
     return db.get(Users, user_id)
+
 
 # Get a user by email
 
@@ -23,6 +25,7 @@ def get_user(db: Session, user_id: int) -> Optional[Users]:
 def get_user_by_email(db: Session, email: str) -> Optional[Users]:
     statement = select(Users).where(Users.email == email)
     return db.exec(statement).first()
+
 
 # Create a new user
 
@@ -34,12 +37,14 @@ def create_user(db: Session, user: Users) -> Users:
     db.refresh(user)
     return user
 
+
 # Get all todos
 
 
 def get_todos(db: Session, skip: int = 0, limit: int = 100) -> list[Todo]:
     statement = select(Todo).offset(skip).limit(limit)
     return db.exec(statement).all()
+
 
 # Create a new todo
 

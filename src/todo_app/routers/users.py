@@ -1,15 +1,15 @@
 from fastapi import APIRouter
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import Query, HTTPException
 from typing import List, Annotated
 from sqlmodel import select
 
-from ..sqlmodel_orm.models.user_model import *
+from ..sqlmodel_orm.models.user_model import Users, UsersCreate, UsersPublic, UsersUpdate
 from ..dependencies import SessionDep
 
-router = APIRouter()
+router = APIRouter(prefix="/users", tags=["users"])
 
 
-@router.post("/users/", response_model=UsersPublic, tags=["users"])
+@router.post("/", response_model=UsersPublic)
 def create_user(user: UsersCreate, session: SessionDep) -> Users:
     db_user = Users.model_validate(user)
     session.add(db_user)
@@ -18,7 +18,7 @@ def create_user(user: UsersCreate, session: SessionDep) -> Users:
     return db_user
 
 
-@router.get("/users/", response_model=List[UsersPublic], tags=["users"])
+@router.get("/", response_model=List[UsersPublic])
 def read_users(
     session: SessionDep,
     offset: int = 0,
@@ -28,7 +28,7 @@ def read_users(
     return users
 
 
-@router.get("/users/{user_id}", response_model=UsersPublic, tags=["users"])
+@router.get("/{user_id}", response_model=UsersPublic)
 def read_user(user_id: int, session: SessionDep):
     user = session.get(Users, user_id)
     if not user:
@@ -36,7 +36,7 @@ def read_user(user_id: int, session: SessionDep):
     return user
 
 
-@router.patch("/users/{user_id}", response_model=UsersPublic, tags=["users"])
+@router.patch("/{user_id}", response_model=UsersPublic)
 def update_user(user_id: int, user: UsersUpdate, session: SessionDep):
     user_db = session.get(Users, user_id)
     if not user_db:
@@ -49,8 +49,8 @@ def update_user(user_id: int, user: UsersUpdate, session: SessionDep):
     return user_db
 
 
-@router.delete("/users/{user_id}")
-def delete_user(user_id: int, session: SessionDep, tags=["users"]):
+@router.delete("/{user_id}")
+def delete_user(user_id: int, session: SessionDep):
     user = session.get(user, user_id)
     if not user:
         raise HTTPException(status_code=404, detail="user not found")
