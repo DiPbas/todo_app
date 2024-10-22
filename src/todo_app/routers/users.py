@@ -3,7 +3,12 @@ from fastapi import Query, HTTPException
 from typing import List, Annotated
 from sqlmodel import select
 
-from ..sqlmodel_orm.models.user_model import Users, UsersCreate, UsersPublic, UsersUpdate
+from ..sqlmodel_orm.models.user_model import (
+    Users,
+    UsersCreate,
+    UsersPublic,
+    UsersUpdate,
+)
 from ..dependencies import SessionDep
 
 router = APIRouter(prefix="/users", tags=["users"])
@@ -51,7 +56,7 @@ def update_user(user_id: int, user: UsersUpdate, session: SessionDep):
 
 @router.delete("/{user_id}")
 def delete_user(user_id: int, session: SessionDep):
-    user = session.get(user, user_id)
+    user = session.get(Users, user_id)
     if not user:
         raise HTTPException(status_code=404, detail="user not found")
     session.delete(user)

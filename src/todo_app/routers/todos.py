@@ -13,7 +13,7 @@ def create_todo(todo: TodoCreate, session: SessionDep) -> Todo:
     user = session.get(Users, todo.user_id)
     if not user:
         raise HTTPException(status_code=404, detail="Todo not found")
-    
+
     db_todo = Todo.model_validate(todo)
     session.add(db_todo)
     session.commit()
@@ -26,7 +26,7 @@ def read_todos(
     session: SessionDep,
     user_id: int | None = Query(None),
     offset: int = 0,
-    limit: int = Query(100, le=100)
+    limit: int = Query(100, le=100),
 ):
     query = select(Todo)
     if user_id is not None:
@@ -49,10 +49,10 @@ def update_todo(todo_id: int, todo: TodoUpdate, session: SessionDep):
     db_todo = session.get(Todo, todo_id)
     if not db_todo:
         raise HTTPException(status_code=404, detail="Todo not found")
-    
+
     todo_data = todo.model_dump(exclude_unset=True)
     db_todo.sqlmodel_update(todo_data)
-    
+
     session.add(db_todo)
     session.commit()
     session.refresh(db_todo)
@@ -64,7 +64,7 @@ def delete_todo(todo_id: int, session: SessionDep):
     todo = session.get(Todo, todo_id)
     if not todo:
         raise HTTPException(status_code=404, detail="Todo not found")
-    
+
     session.delete(todo)
     session.commit()
     return {"ok": True}

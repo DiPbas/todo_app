@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from .sqlmodel_orm.models import *
 from .routers import users, todos
 
 
