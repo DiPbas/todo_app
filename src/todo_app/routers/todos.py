@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, Query
 from sqlmodel import select
+from typing import Annotated
 
 from ..sqlmodel_orm.models.todo_model import Todo, TodoCreate, TodoRead, TodoUpdate
 from ..dependencies import SessionDep
@@ -24,9 +25,11 @@ def create_todo(todo: TodoCreate, session: SessionDep) -> Todo:
 @router.get("/", response_model=list[TodoRead])
 def read_todos(
     session: SessionDep,
-    user_id: int | None = Query(None),
-    offset: int = 0,
-    limit: int = Query(100, le=100),
+    user_id: int | None = None,
+    offset: Annotated[
+        int, Query(max_length=2, gt=0)
+    ] = 0,  # Via Annotated en Query maak je extra validatie mogelijk over de parameters
+    limit: Annotated[int, Query(le=100)] = 100,
 ):
     query = select(Todo)
     if user_id is not None:

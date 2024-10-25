@@ -14,7 +14,7 @@ class UserBase(SQLModel):
 
 class Users(UserBase, table=True):
     id: int | None = Field(default=None, primary_key=True)
-    hashed_password: str = Field(default="wachtwoord")
+    password: str = Field()
     created_at: date | None = Field(default_factory=date.today)
 
     # Relationship to Todo
@@ -23,13 +23,15 @@ class Users(UserBase, table=True):
 
 class UsersPublic(UserBase):
     id: int
+    password: str
 
 
 class UsersCreate(UserBase):
     email: str
+    password: str # tijdelijk toegevoegd voor tests
 
 
 class UsersUpdate(UserBase):
     email: str | None = None
-    hashed_password: str | None = None
+    password: str | None = None 
     created_at: date | None = None

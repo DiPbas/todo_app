@@ -3,6 +3,7 @@ from fastapi import Query, HTTPException
 from typing import List, Annotated
 from sqlmodel import select
 
+
 from ..sqlmodel_orm.models.user_model import (
     Users,
     UsersCreate,
@@ -10,12 +11,14 @@ from ..sqlmodel_orm.models.user_model import (
     UsersUpdate,
 )
 from ..dependencies import SessionDep
+from ..internal.encrypt import hash_password
 
 router = APIRouter(prefix="/users", tags=["users"])
 
 
 @router.post("/", response_model=UsersPublic)
-def create_user(user: UsersCreate, session: SessionDep) -> Users:
+def create_user(user: UsersCreate, session: SessionDep):
+    user.password = hash_password(user.password)
     db_user = Users.model_validate(user)
     session.add(db_user)
     session.commit()
