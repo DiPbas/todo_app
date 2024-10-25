@@ -17,23 +17,14 @@ def setup_db(postgres_db):
     engine.dispose()  # Sluit de database connecties af
 
 
-@pytest.fixture(scope="f")
-def setup_api(test_api):
-    client = test_api
-
-    yield client
-
-    client.close()
-
-
-def test_password_isEcrypted_after_create(setup_api, setup_db):
+def test_password_isEcrypted_after_create(test_api, setup_db):
     # Arrange
     user = UserFactory()
 
     pay_load = {"email": user.email, "password": user.password}
 
     # Act
-    response = setup_api.post("/users/", json=pay_load)
+    response = test_api.post("/users/", json=pay_load)
 
     # Assert
     assert user.password != response.json().get("password")
