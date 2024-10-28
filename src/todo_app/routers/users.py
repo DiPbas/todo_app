@@ -4,14 +4,14 @@ from typing import List, Annotated
 from sqlmodel import select
 
 
-from ..sqlmodel_orm.models.user_model import (
+from todo_app.sqlmodel_orm.models.user_model import (
     Users,
     UsersCreate,
     UsersPublic,
     UsersUpdate,
 )
-from ..dependencies import SessionDep
-from ..internal.encrypt import hash_password
+from todo_app.dependencies import SessionDep
+from todo_app.internal.encrypt import hash_password
 
 router = APIRouter(prefix="/users", tags=["users"])
 

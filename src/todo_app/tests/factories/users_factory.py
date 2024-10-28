@@ -1,7 +1,6 @@
 import factory
 import random
 
-import factory.fuzzy
 from todo_app.sqlmodel_orm.models.user_model import Users
 
 

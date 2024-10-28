@@ -2,9 +2,9 @@ from fastapi import APIRouter, HTTPException, Query
 from sqlmodel import select
 from typing import Annotated
 
-from ..sqlmodel_orm.models.todo_model import Todo, TodoCreate, TodoRead, TodoUpdate
-from ..dependencies import SessionDep
-from ..sqlmodel_orm.models.user_model import Users
+from todo_app.sqlmodel_orm.models.todo_model import Todo, TodoCreate, TodoRead, TodoUpdate
+from todo_app.dependencies import SessionDep
+from todo_app.sqlmodel_orm.models.user_model import Users
 
 router = APIRouter(prefix="/todos", tags=["todos"])
 

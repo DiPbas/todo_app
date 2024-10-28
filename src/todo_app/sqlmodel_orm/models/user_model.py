@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 
 # Voorkom circulaire referentie, maar wel met type hinting in model naar foreign-key relatie tussen models
 if TYPE_CHECKING:
-    from .todo_model import Todo
+    from todo_app.sqlmodel_orm.models.todo_model import Todo
 
 
 class UserBase(SQLModel):
