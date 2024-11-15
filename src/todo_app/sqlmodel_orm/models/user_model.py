@@ -1,7 +1,8 @@
+import re
 from sqlmodel import SQLModel, Field, Relationship
 from datetime import date
 from typing import TYPE_CHECKING
-
+from pydantic import EmailStr, field_validator
 
 # Voorkom circulaire referentie, maar wel met type hinting in model naar foreign-key relatie tussen models
 if TYPE_CHECKING:
@@ -9,7 +10,7 @@ if TYPE_CHECKING:
 
 
 class UserBase(SQLModel):
-    email: str
+    email: EmailStr
 
 
 class Users(UserBase, table=True):
@@ -28,10 +29,18 @@ class UsersPublic(UserBase):
 
 class UsersCreate(UserBase):
     email: str
-    password: str # tijdelijk toegevoegd voor tests
+    password: str
+
+    @field_validator("password")
+    def validate_password(cls, password):
+        if not len(password) > 4:
+            raise ValueError("Password must contain more than 4 characters")
+        if not re.search(r'\d', password):
+            raise ValueError("Password must contain at least one number.")
+        return password
 
 
 class UsersUpdate(UserBase):
     email: str | None = None
-    password: str | None = None 
+    password: str | None = None
     created_at: date | None = None
