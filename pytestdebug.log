@@ -1,0 +1,1888 @@
+versions pytest-8.3.3, python-3.12.6.final.0
+invocation_dir=C:\Users\BasVerburg\Projects\dip\todo-app
+cwd=C:\Users\BasVerburg\Projects\dip\todo-app
+args=('--debug',)
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x000001AD734E8980>
+    pytest_plugin_registered [hook]
+        plugin: <Session  exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        plugin_name: session
+        manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x000001AD734E8980>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001AD7647E510>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001AD76461250>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+          plugin_name: 1844484021360
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001AD734E8980>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\anyio\\pytest_plugin.py'>
+          plugin_name: anyio
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'faker.contrib.pytest.plugin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\faker\\contrib\\pytest\\plugin.py'>
+          plugin_name: faker
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001AD73F95EE0>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001AD7647C320>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001AD7647E510>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001AD76461250>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001AD7647DB50>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001AD73FC6990>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+          plugin_name: 1844484021360
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x000001AD734E8980>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\mark\\__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\assertion\\__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'anyio.pytest_plugin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\anyio\\pytest_plugin.py'>
+          plugin_name: anyio
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'faker.contrib.pytest.plugin' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\faker\\contrib\\pytest\\plugin.py'>
+          plugin_name: faker
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=9 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001AD73F95EE0>' mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=11 _state='suspended' tmpfile=<_io.TextIOWrapper name='<tempfile._TemporaryFileWrapper object at 0x000001AD7647C320>' mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=7 _state='started' tmpfile=<_io.TextIOWrapper name='nul' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x000001AD7647E510>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x000001AD76461250>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x000001AD7647DB50>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x000001AD73FC6990>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x000001AD76460B30>
+          plugin_name: funcmanage
+          manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x000001AD734E8980>
+          start_path: C:\Users\BasVerburg\Projects\dip\todo-app
+          startdir: C:\Users\BasVerburg\Projects\dip\todo-app
+      early skip of rewriting module: email.parser [assertion]
+      early skip of rewriting module: email.feedparser [assertion]
+      finish pytest_report_header --> [['rootdir: C:\\Users\\BasVerburg\\Projects\\dip\\todo-app', 'configfile: pyproject.toml', 'plugins: anyio-4.6.0, Faker-30.8.0'], ['using: pytest-8.3.3', 'registered third-party plugins:', '  anyio-4.6.0 at C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\anyio\\pytest_plugin.py', '  Faker-30.8.0 at C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\faker\\contrib\\pytest\\plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['C:\\Users\\BasVerburg\\Projects\\dip\\todo-app'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument CollectionArgument(path=WindowsPath('C:/Users/BasVerburg/Projects/dip/todo-app'), parts=[], module_name=None) [collection]
+            pytest_collect_directory [hook]
+                path: C:\Users\BasVerburg\Projects\dip\todo-app
+                parent: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+            finish pytest_collect_directory --> <Dir todo-app> [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Dir todo-app> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir todo-app>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir todo-app>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.git
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.git
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.gitignore
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.gitignore
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\.gitignore
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.gitignore
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.pytest_cache
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.pytest_cache
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.python-version
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.python-version
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\.python-version
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.python-version
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.ruff_cache
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.ruff_cache
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\.venv
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\.venv
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\Dockerfile
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\Dockerfile
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\Dockerfile
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\Dockerfile
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\README.md
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\README.md
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\README.md
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\README.md
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\docker-compose.yml
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\docker-compose.yml
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\docker-compose.yml
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\docker-compose.yml
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\helper
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\helper
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\helper
+            parent: <Dir todo-app>
+        finish pytest_collect_directory --> <Dir helper> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\pyproject.toml
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\pyproject.toml
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\pyproject.toml
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\pyproject.toml
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\pytestdebug.log
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\pytestdebug.log
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\pytestdebug.log
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\pytestdebug.log
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements-dev.lock
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements-dev.lock
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements-dev.lock
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements-dev.lock
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements.lock
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements.lock
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements.lock
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\requirements.lock
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\rye.readme.txt
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\rye.readme.txt
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir todo-app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\rye.readme.txt
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\rye.readme.txt
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src
+            parent: <Dir todo-app>
+        finish pytest_collect_directory --> <Dir src> [hook]
+      finish pytest_make_collect_report --> <CollectReport '.' lenresult=2 outcome='passed'> [hook]
+    genitems <Dir helper> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir helper>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir helper>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\helper\init.sql
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\helper\init.sql
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir helper>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\helper\init.sql
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\helper\init.sql
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'helper' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'helper' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir src> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir src>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir src>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app
+            parent: <Dir src>
+        finish pytest_collect_directory --> <Package todo_app> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src' lenresult=1 outcome='passed'> [hook]
+    genitems <Package todo_app> [collection]
+      pytest_collectstart [hook]
+          collector: <Package todo_app>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package todo_app>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)
+            parent: <Package todo_app>
+        finish pytest_collect_directory --> <Package database(OLD)> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\dependencies.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\dependencies.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\dependencies.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\dependencies.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal
+            parent: <Package todo_app>
+        finish pytest_collect_directory --> <Dir internal> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\main.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\main.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package todo_app>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\main.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\main.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers
+            parent: <Package todo_app>
+        finish pytest_collect_directory --> <Dir routers> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm
+            parent: <Package todo_app>
+        finish pytest_collect_directory --> <Package sqlmodel_orm> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests
+            parent: <Package todo_app>
+        finish pytest_collect_directory --> <Package tests> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app' lenresult=5 outcome='passed'> [hook]
+    genitems <Package database(OLD)> [collection]
+      pytest_collectstart [hook]
+          collector: <Package database(OLD)>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package database(OLD)>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\crud.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\crud.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\crud.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\crud.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\database.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\database.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\database.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\database.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\main.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\main.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\main.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\main.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\models.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\models.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\models.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\models.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\schemas.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\schemas.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package database(OLD)>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\schemas.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\database(OLD)\schemas.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/database(OLD)' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/database(OLD)' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir internal> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir internal>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir internal>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\encrypt.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\encrypt.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir internal>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\encrypt.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\internal\encrypt.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/internal' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/internal' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir routers> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir routers>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir routers>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\todos.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\todos.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir routers>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\todos.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\todos.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\users.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir routers>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\routers\users.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/routers' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/routers' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package sqlmodel_orm> [collection]
+      pytest_collectstart [hook]
+          collector: <Package sqlmodel_orm>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package sqlmodel_orm>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package sqlmodel_orm>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\database.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\database.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package sqlmodel_orm>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\database.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\database.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models
+            parent: <Package sqlmodel_orm>
+        finish pytest_collect_directory --> <Package models> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/sqlmodel_orm' lenresult=1 outcome='passed'> [hook]
+    genitems <Package models> [collection]
+      pytest_collectstart [hook]
+          collector: <Package models>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package models>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package models>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\todo_model.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\todo_model.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package models>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\todo_model.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\todo_model.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\user_model.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\user_model.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package models>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\user_model.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\sqlmodel_orm\models\user_model.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/sqlmodel_orm/models' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/sqlmodel_orm/models' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/sqlmodel_orm' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package tests> [collection]
+      pytest_collectstart [hook]
+          collector: <Package tests>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package tests>
+      early skip of rewriting module: todo_app [assertion]
+      early skip of rewriting module: todo_app.tests [assertion]
+      find_module called for: todo_app.tests.conftest [assertion]
+      rewriting conftest file: 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\src\\todo_app\\tests\\conftest.py' [assertion]
+      found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py [assertion]
+      early skip of rewriting module: psycopg2 [assertion]
+      early skip of rewriting module: psycopg2._psycopg [assertion]
+      early skip of rewriting module: psycopg2.errors [assertion]
+      early skip of rewriting module: psycopg2.extensions [assertion]
+      early skip of rewriting module: psycopg2._json [assertion]
+      early skip of rewriting module: psycopg2._range [assertion]
+      early skip of rewriting module: sqlalchemy [assertion]
+      early skip of rewriting module: sqlalchemy.util [assertion]
+      early skip of rewriting module: sqlalchemy.util.preloaded [assertion]
+      early skip of rewriting module: sqlalchemy.util._collections [assertion]
+      early skip of rewriting module: sqlalchemy.util._has_cy [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension.collections [assertion]
+      early skip of rewriting module: backports_abc [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension.immutabledict [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension.processors [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension.resultproxy [assertion]
+      early skip of rewriting module: sqlalchemy.cyextension.util [assertion]
+      early skip of rewriting module: sqlalchemy.exc [assertion]
+      early skip of rewriting module: sqlalchemy.util.compat [assertion]
+      early skip of rewriting module: sqlalchemy.util.typing [assertion]
+      early skip of rewriting module: sqlalchemy.util.concurrency [assertion]
+      early skip of rewriting module: asyncio [assertion]
+      early skip of rewriting module: asyncio.base_events [assertion]
+      early skip of rewriting module: asyncio.constants [assertion]
+      early skip of rewriting module: asyncio.coroutines [assertion]
+      early skip of rewriting module: asyncio.events [assertion]
+      early skip of rewriting module: asyncio.format_helpers [assertion]
+      early skip of rewriting module: _asyncio [assertion]
+      early skip of rewriting module: asyncio.base_futures [assertion]
+      early skip of rewriting module: asyncio.exceptions [assertion]
+      early skip of rewriting module: asyncio.base_tasks [assertion]
+      early skip of rewriting module: asyncio.futures [assertion]
+      early skip of rewriting module: asyncio.protocols [assertion]
+      early skip of rewriting module: asyncio.sslproto [assertion]
+      early skip of rewriting module: asyncio.transports [assertion]
+      early skip of rewriting module: asyncio.log [assertion]
+      early skip of rewriting module: asyncio.staggered [assertion]
+      early skip of rewriting module: asyncio.locks [assertion]
+      early skip of rewriting module: asyncio.mixins [assertion]
+      early skip of rewriting module: asyncio.tasks [assertion]
+      early skip of rewriting module: asyncio.timeouts [assertion]
+      early skip of rewriting module: asyncio.trsock [assertion]
+      early skip of rewriting module: asyncio.runners [assertion]
+      early skip of rewriting module: asyncio.queues [assertion]
+      early skip of rewriting module: asyncio.streams [assertion]
+      early skip of rewriting module: asyncio.subprocess [assertion]
+      early skip of rewriting module: asyncio.taskgroups [assertion]
+      early skip of rewriting module: asyncio.threads [assertion]
+      early skip of rewriting module: asyncio.windows_events [assertion]
+      early skip of rewriting module: _overlapped [assertion]
+      early skip of rewriting module: asyncio.base_subprocess [assertion]
+      early skip of rewriting module: asyncio.proactor_events [assertion]
+      early skip of rewriting module: asyncio.selector_events [assertion]
+      early skip of rewriting module: asyncio.windows_utils [assertion]
+      early skip of rewriting module: greenlet [assertion]
+      early skip of rewriting module: greenlet._greenlet [assertion]
+      early skip of rewriting module: sqlalchemy.util._concurrency_py3k [assertion]
+      early skip of rewriting module: sqlalchemy.util.langhelpers [assertion]
+      early skip of rewriting module: sqlalchemy.util.deprecations [assertion]
+      early skip of rewriting module: sqlalchemy.engine [assertion]
+      early skip of rewriting module: sqlalchemy.engine.events [assertion]
+      early skip of rewriting module: sqlalchemy.engine.base [assertion]
+      early skip of rewriting module: sqlalchemy.engine.interfaces [assertion]
+      early skip of rewriting module: sqlalchemy.event [assertion]
+      early skip of rewriting module: sqlalchemy.event.api [assertion]
+      early skip of rewriting module: sqlalchemy.event.base [assertion]
+      early skip of rewriting module: sqlalchemy.event.attr [assertion]
+      early skip of rewriting module: sqlalchemy.event.legacy [assertion]
+      early skip of rewriting module: sqlalchemy.event.registry [assertion]
+      early skip of rewriting module: sqlalchemy.pool [assertion]
+      early skip of rewriting module: sqlalchemy.pool.events [assertion]
+      early skip of rewriting module: sqlalchemy.pool.base [assertion]
+      early skip of rewriting module: sqlalchemy.log [assertion]
+      early skip of rewriting module: sqlalchemy.pool.impl [assertion]
+      early skip of rewriting module: sqlalchemy.util.queue [assertion]
+      early skip of rewriting module: sqlalchemy.sql [assertion]
+      early skip of rewriting module: sqlalchemy.sql._typing [assertion]
+      early skip of rewriting module: sqlalchemy.sql.roles [assertion]
+      early skip of rewriting module: sqlalchemy.inspection [assertion]
+      early skip of rewriting module: sqlalchemy.sql.base [assertion]
+      early skip of rewriting module: sqlalchemy.sql.visitors [assertion]
+      early skip of rewriting module: sqlalchemy.sql.cache_key [assertion]
+      early skip of rewriting module: sqlalchemy.sql.traversals [assertion]
+      early skip of rewriting module: sqlalchemy.sql.operators [assertion]
+      early skip of rewriting module: sqlalchemy.sql.compiler [assertion]
+      early skip of rewriting module: sqlalchemy.sql.coercions [assertion]
+      early skip of rewriting module: sqlalchemy.sql.crud [assertion]
+      early skip of rewriting module: sqlalchemy.sql.dml [assertion]
+      early skip of rewriting module: sqlalchemy.sql.util [assertion]
+      early skip of rewriting module: sqlalchemy.sql.annotation [assertion]
+      early skip of rewriting module: sqlalchemy.sql.ddl [assertion]
+      early skip of rewriting module: sqlalchemy.sql.elements [assertion]
+      early skip of rewriting module: sqlalchemy.sql.type_api [assertion]
+      early skip of rewriting module: sqlalchemy.util.topological [assertion]
+      early skip of rewriting module: sqlalchemy.sql.schema [assertion]
+      early skip of rewriting module: sqlalchemy.sql.selectable [assertion]
+      early skip of rewriting module: sqlalchemy.sql.sqltypes [assertion]
+      early skip of rewriting module: pickle [assertion]
+      early skip of rewriting module: _compat_pickle [assertion]
+      early skip of rewriting module: _pickle [assertion]
+      early skip of rewriting module: sqlalchemy.engine.processors [assertion]
+      early skip of rewriting module: sqlalchemy.engine._py_processors [assertion]
+      early skip of rewriting module: sqlalchemy.sql.functions [assertion]
+      early skip of rewriting module: sqlalchemy.sql.expression [assertion]
+      early skip of rewriting module: sqlalchemy.sql._dml_constructors [assertion]
+      early skip of rewriting module: sqlalchemy.sql._elements_constructors [assertion]
+      early skip of rewriting module: sqlalchemy.sql._selectable_constructors [assertion]
+      early skip of rewriting module: sqlalchemy.sql.lambdas [assertion]
+      early skip of rewriting module: sqlalchemy.sql.default_comparator [assertion]
+      early skip of rewriting module: sqlalchemy.sql.naming [assertion]
+      early skip of rewriting module: sqlalchemy.sql.events [assertion]
+      early skip of rewriting module: sqlalchemy.engine.util [assertion]
+      early skip of rewriting module: sqlalchemy.engine.create [assertion]
+      early skip of rewriting module: sqlalchemy.engine.url [assertion]
+      early skip of rewriting module: sqlalchemy.dialects [assertion]
+      early skip of rewriting module: sqlalchemy.engine.mock [assertion]
+      early skip of rewriting module: sqlalchemy.engine.cursor [assertion]
+      early skip of rewriting module: sqlalchemy.engine.result [assertion]
+      early skip of rewriting module: sqlalchemy.engine.row [assertion]
+      early skip of rewriting module: sqlalchemy.engine.reflection [assertion]
+      early skip of rewriting module: sqlalchemy.schema [assertion]
+      early skip of rewriting module: sqlalchemy.types [assertion]
+      early skip of rewriting module: sqlalchemy.engine.default [assertion]
+      early skip of rewriting module: sqlalchemy.engine.characteristics [assertion]
+      early skip of rewriting module: sqlalchemy.orm [assertion]
+      early skip of rewriting module: sqlalchemy.orm.exc [assertion]
+      early skip of rewriting module: sqlalchemy.orm.util [assertion]
+      early skip of rewriting module: sqlalchemy.orm.attributes [assertion]
+      early skip of rewriting module: sqlalchemy.orm.collections [assertion]
+      early skip of rewriting module: sqlalchemy.orm.base [assertion]
+      early skip of rewriting module: sqlalchemy.orm._typing [assertion]
+      early skip of rewriting module: sqlalchemy.sql._orm_types [assertion]
+      early skip of rewriting module: sqlalchemy.orm.mapped_collection [assertion]
+      early skip of rewriting module: sqlalchemy.orm.interfaces [assertion]
+      early skip of rewriting module: sqlalchemy.orm.path_registry [assertion]
+      early skip of rewriting module: sqlalchemy.orm.mapper [assertion]
+      early skip of rewriting module: sqlalchemy.orm.instrumentation [assertion]
+      early skip of rewriting module: sqlalchemy.orm.state [assertion]
+      early skip of rewriting module: sqlalchemy.orm.loading [assertion]
+      early skip of rewriting module: sqlalchemy.orm.context [assertion]
+      early skip of rewriting module: sqlalchemy.future [assertion]
+      early skip of rewriting module: sqlalchemy.future.engine [assertion]
+      early skip of rewriting module: sqlalchemy.orm.properties [assertion]
+      early skip of rewriting module: sqlalchemy.orm.strategy_options [assertion]
+      early skip of rewriting module: sqlalchemy.orm.descriptor_props [assertion]
+      early skip of rewriting module: sqlalchemy.orm.relationships [assertion]
+      early skip of rewriting module: sqlalchemy.orm._orm_constructors [assertion]
+      early skip of rewriting module: sqlalchemy.orm.query [assertion]
+      early skip of rewriting module: sqlalchemy.orm.session [assertion]
+      early skip of rewriting module: sqlalchemy.orm.bulk_persistence [assertion]
+      early skip of rewriting module: sqlalchemy.orm.evaluator [assertion]
+      early skip of rewriting module: sqlalchemy.orm.persistence [assertion]
+      early skip of rewriting module: sqlalchemy.orm.sync [assertion]
+      early skip of rewriting module: sqlalchemy.orm.identity [assertion]
+      early skip of rewriting module: sqlalchemy.orm.state_changes [assertion]
+      early skip of rewriting module: sqlalchemy.orm.unitofwork [assertion]
+      early skip of rewriting module: sqlalchemy.orm.decl_api [assertion]
+      early skip of rewriting module: sqlalchemy.orm.clsregistry [assertion]
+      early skip of rewriting module: sqlalchemy.orm.decl_base [assertion]
+      early skip of rewriting module: sqlalchemy.orm.dynamic [assertion]
+      early skip of rewriting module: sqlalchemy.orm.writeonly [assertion]
+      early skip of rewriting module: sqlalchemy.orm.strategies [assertion]
+      early skip of rewriting module: sqlalchemy.orm.events [assertion]
+      early skip of rewriting module: sqlalchemy.orm.scoping [assertion]
+      early skip of rewriting module: sqlalchemy.orm.dependency [assertion]
+      early skip of rewriting module: sqlmodel [assertion]
+      early skip of rewriting module: sqlmodel.main [assertion]
+      early skip of rewriting module: pydantic [assertion]
+      early skip of rewriting module: pydantic._migration [assertion]
+      early skip of rewriting module: pydantic.version [assertion]
+      early skip of rewriting module: pydantic.errors [assertion]
+      early skip of rewriting module: pydantic.main [assertion]
+      early skip of rewriting module: pydantic_core [assertion]
+      early skip of rewriting module: pydantic_core._pydantic_core [assertion]
+      early skip of rewriting module: pydantic_core.core_schema [assertion]
+      early skip of rewriting module: pydantic._internal [assertion]
+      early skip of rewriting module: pydantic._internal._config [assertion]
+      early skip of rewriting module: pydantic.aliases [assertion]
+      early skip of rewriting module: pydantic._internal._internal_dataclass [assertion]
+      early skip of rewriting module: pydantic.config [assertion]
+      early skip of rewriting module: pydantic.warnings [assertion]
+      early skip of rewriting module: pydantic._internal._decorators [assertion]
+      early skip of rewriting module: pydantic._internal._core_utils [assertion]
+      early skip of rewriting module: pydantic._internal._repr [assertion]
+      early skip of rewriting module: pydantic._internal._typing_extra [assertion]
+      early skip of rewriting module: zoneinfo [assertion]
+      early skip of rewriting module: zoneinfo._tzpath [assertion]
+      early skip of rewriting module: sysconfig [assertion]
+      early skip of rewriting module: zoneinfo._common [assertion]
+      early skip of rewriting module: _zoneinfo [assertion]
+      early skip of rewriting module: pydantic._internal._fields [assertion]
+      early skip of rewriting module: pydantic._internal._docs_extraction [assertion]
+      early skip of rewriting module: pydantic._internal._import_utils [assertion]
+      early skip of rewriting module: pydantic._internal._forward_ref [assertion]
+      early skip of rewriting module: pydantic._internal._generics [assertion]
+      early skip of rewriting module: pydantic._internal._utils [assertion]
+      early skip of rewriting module: pydantic._internal._mock_val_ser [assertion]
+      early skip of rewriting module: pydantic.plugin [assertion]
+      early skip of rewriting module: pydantic.plugin._schema_validator [assertion]
+      early skip of rewriting module: pydantic._internal._model_construction [assertion]
+      early skip of rewriting module: pydantic._internal._generate_schema [assertion]
+      early skip of rewriting module: pydantic.annotated_handlers [assertion]
+      early skip of rewriting module: pydantic.functional_validators [assertion]
+      early skip of rewriting module: pydantic._internal._core_metadata [assertion]
+      early skip of rewriting module: pydantic.json_schema [assertion]
+      early skip of rewriting module: pydantic._internal._schema_generation_shared [assertion]
+      early skip of rewriting module: pydantic._internal._discriminated_union [assertion]
+      early skip of rewriting module: pydantic._internal._known_annotated_metadata [assertion]
+      early skip of rewriting module: pydantic._internal._signature [assertion]
+      early skip of rewriting module: pydantic._internal._validate_call [assertion]
+      early skip of rewriting module: pydantic.networks [assertion]
+      early skip of rewriting module: pydantic.fields [assertion]
+      early skip of rewriting module: annotated_types [assertion]
+      early skip of rewriting module: pydantic._internal._validators [assertion]
+      early skip of rewriting module: pydantic.types [assertion]
+      early skip of rewriting module: sqlmodel._compat [assertion]
+      early skip of rewriting module: sqlmodel.sql [assertion]
+      early skip of rewriting module: sqlmodel.sql.sqltypes [assertion]
+      early skip of rewriting module: pydantic.plugin._loader [assertion]
+      early skip of rewriting module: sqlmodel.orm [assertion]
+      early skip of rewriting module: sqlmodel.orm.session [assertion]
+      early skip of rewriting module: sqlmodel.sql.base [assertion]
+      early skip of rewriting module: sqlmodel.sql.expression [assertion]
+      early skip of rewriting module: sqlmodel.sql._expression_select_cls [assertion]
+      early skip of rewriting module: sqlmodel.sql._expression_select_gen [assertion]
+      early skip of rewriting module: testcontainers [assertion]
+      early skip of rewriting module: testcontainers.postgres [assertion]
+      early skip of rewriting module: testcontainers.core [assertion]
+      early skip of rewriting module: testcontainers.core.generic [assertion]
+      early skip of rewriting module: testcontainers.core.container [assertion]
+      early skip of rewriting module: docker [assertion]
+      early skip of rewriting module: docker.api [assertion]
+      early skip of rewriting module: docker.api.client [assertion]
+      early skip of rewriting module: requests [assertion]
+      early skip of rewriting module: urllib3 [assertion]
+      early skip of rewriting module: urllib3.exceptions [assertion]
+      early skip of rewriting module: http [assertion]
+      early skip of rewriting module: http.client [assertion]
+      early skip of rewriting module: urllib3._base_connection [assertion]
+      early skip of rewriting module: urllib3.util [assertion]
+      early skip of rewriting module: urllib3.util.connection [assertion]
+      early skip of rewriting module: urllib3.util.timeout [assertion]
+      early skip of rewriting module: urllib3.util.request [assertion]
+      early skip of rewriting module: urllib3.util.util [assertion]
+      early skip of rewriting module: brotlicffi [assertion]
+      early skip of rewriting module: brotli [assertion]
+      early skip of rewriting module: zstandard [assertion]
+      early skip of rewriting module: urllib3.util.response [assertion]
+      early skip of rewriting module: urllib3.util.retry [assertion]
+      early skip of rewriting module: urllib3.util.ssl_ [assertion]
+      early skip of rewriting module: hmac [assertion]
+      early skip of rewriting module: urllib3.util.url [assertion]
+      early skip of rewriting module: urllib3.util.ssltransport [assertion]
+      early skip of rewriting module: urllib3.util.wait [assertion]
+      early skip of rewriting module: urllib3._collections [assertion]
+      early skip of rewriting module: urllib3._version [assertion]
+      early skip of rewriting module: urllib3.connectionpool [assertion]
+      early skip of rewriting module: queue [assertion]
+      early skip of rewriting module: _queue [assertion]
+      early skip of rewriting module: urllib3._request_methods [assertion]
+      early skip of rewriting module: urllib3.filepost [assertion]
+      early skip of rewriting module: urllib3.fields [assertion]
+      early skip of rewriting module: mimetypes [assertion]
+      early skip of rewriting module: urllib3.response [assertion]
+      early skip of rewriting module: brotlicffi [assertion]
+      early skip of rewriting module: brotli [assertion]
+      early skip of rewriting module: zstandard [assertion]
+      early skip of rewriting module: urllib3.connection [assertion]
+      early skip of rewriting module: urllib3.http2 [assertion]
+      early skip of rewriting module: urllib3.http2.probe [assertion]
+      early skip of rewriting module: urllib3.util.ssl_match_hostname [assertion]
+      early skip of rewriting module: urllib3.util.proxy [assertion]
+      early skip of rewriting module: urllib3.poolmanager [assertion]
+      early skip of rewriting module: requests.exceptions [assertion]
+      early skip of rewriting module: requests.compat [assertion]
+      early skip of rewriting module: chardet [assertion]
+      early skip of rewriting module: charset_normalizer [assertion]
+      early skip of rewriting module: charset_normalizer.api [assertion]
+      early skip of rewriting module: charset_normalizer.cd [assertion]
+      early skip of rewriting module: charset_normalizer.constant [assertion]
+      early skip of rewriting module: charset_normalizer.md [assertion]
+      early skip of rewriting module: charset_normalizer.md__mypyc [assertion]
+      early skip of rewriting module: charset_normalizer.utils [assertion]
+      early skip of rewriting module: _multibytecodec [assertion]
+      early skip of rewriting module: charset_normalizer.models [assertion]
+      early skip of rewriting module: charset_normalizer.legacy [assertion]
+      early skip of rewriting module: charset_normalizer.version [assertion]
+      early skip of rewriting module: simplejson [assertion]
+      early skip of rewriting module: http.cookiejar [assertion]
+      early skip of rewriting module: urllib.request [assertion]
+      early skip of rewriting module: urllib.error [assertion]
+      early skip of rewriting module: urllib.response [assertion]
+      early skip of rewriting module: nturl2path [assertion]
+      early skip of rewriting module: http.cookies [assertion]
+      early skip of rewriting module: chardet [assertion]
+      early skip of rewriting module: requests.packages [assertion]
+      early skip of rewriting module: idna [assertion]
+      early skip of rewriting module: idna.core [assertion]
+      early skip of rewriting module: idna.idnadata [assertion]
+      early skip of rewriting module: idna.intranges [assertion]
+      early skip of rewriting module: idna.package_data [assertion]
+      early skip of rewriting module: requests.utils [assertion]
+      early skip of rewriting module: requests.certs [assertion]
+      early skip of rewriting module: certifi [assertion]
+      early skip of rewriting module: certifi.core [assertion]
+      early skip of rewriting module: requests.__version__ [assertion]
+      early skip of rewriting module: requests._internal_utils [assertion]
+      early skip of rewriting module: requests.cookies [assertion]
+      early skip of rewriting module: requests.structures [assertion]
+      early skip of rewriting module: importlib.readers [assertion]
+      early skip of rewriting module: importlib.resources.readers [assertion]
+      early skip of rewriting module: importlib.resources._itertools [assertion]
+      early skip of rewriting module: requests.api [assertion]
+      early skip of rewriting module: requests.sessions [assertion]
+      early skip of rewriting module: requests.adapters [assertion]
+      early skip of rewriting module: requests.auth [assertion]
+      early skip of rewriting module: requests.models [assertion]
+      early skip of rewriting module: encodings.idna [assertion]
+      early skip of rewriting module: stringprep [assertion]
+      early skip of rewriting module: requests.hooks [assertion]
+      early skip of rewriting module: requests.status_codes [assertion]
+      early skip of rewriting module: urllib3.contrib [assertion]
+      early skip of rewriting module: urllib3.contrib.socks [assertion]
+      early skip of rewriting module: socks [assertion]
+      early skip of rewriting module: docker.auth [assertion]
+      early skip of rewriting module: docker.credentials [assertion]
+      early skip of rewriting module: docker.credentials.constants [assertion]
+      early skip of rewriting module: docker.credentials.errors [assertion]
+      early skip of rewriting module: docker.credentials.store [assertion]
+      early skip of rewriting module: docker.credentials.utils [assertion]
+      early skip of rewriting module: docker.errors [assertion]
+      early skip of rewriting module: docker.utils [assertion]
+      early skip of rewriting module: docker.utils.build [assertion]
+      early skip of rewriting module: docker.constants [assertion]
+      early skip of rewriting module: docker.version [assertion]
+      early skip of rewriting module: docker._version [assertion]
+      early skip of rewriting module: docker.utils.fnmatch [assertion]
+      early skip of rewriting module: docker.utils.decorators [assertion]
+      early skip of rewriting module: docker.utils.utils [assertion]
+      early skip of rewriting module: docker.tls [assertion]
+      early skip of rewriting module: docker.utils.config [assertion]
+      early skip of rewriting module: docker.transport [assertion]
+      early skip of rewriting module: docker.transport.unixconn [assertion]
+      early skip of rewriting module: docker.transport.basehttpadapter [assertion]
+      early skip of rewriting module: docker.transport.npipeconn [assertion]
+      early skip of rewriting module: docker.transport.npipesocket [assertion]
+      early skip of rewriting module: pywintypes [assertion]
+      early skip of rewriting module: _win32sysloader [assertion]
+      early skip of rewriting module: win32api [assertion]
+      early skip of rewriting module: win32event [assertion]
+      early skip of rewriting module: win32file [assertion]
+      early skip of rewriting module: win32pipe [assertion]
+      early skip of rewriting module: docker.transport.sshconn [assertion]
+      early skip of rewriting module: paramiko [assertion]
+      early skip of rewriting module: docker.utils.json_stream [assertion]
+      early skip of rewriting module: docker.utils.proxy [assertion]
+      early skip of rewriting module: docker.utils.socket [assertion]
+      early skip of rewriting module: docker.api.build [assertion]
+      early skip of rewriting module: docker.api.config [assertion]
+      early skip of rewriting module: docker.api.container [assertion]
+      early skip of rewriting module: docker.types [assertion]
+      early skip of rewriting module: docker.types.containers [assertion]
+      early skip of rewriting module: docker.types.base [assertion]
+      early skip of rewriting module: docker.types.healthcheck [assertion]
+      early skip of rewriting module: docker.types.daemon [assertion]
+      early skip of rewriting module: docker.types.networks [assertion]
+      early skip of rewriting module: docker.types.services [assertion]
+      early skip of rewriting module: docker.types.swarm [assertion]
+      early skip of rewriting module: docker.api.daemon [assertion]
+      early skip of rewriting module: docker.api.exec_api [assertion]
+      early skip of rewriting module: docker.api.image [assertion]
+      early skip of rewriting module: docker.api.network [assertion]
+      early skip of rewriting module: docker.api.plugin [assertion]
+      early skip of rewriting module: docker.api.secret [assertion]
+      early skip of rewriting module: docker.api.service [assertion]
+      early skip of rewriting module: docker.api.swarm [assertion]
+      early skip of rewriting module: docker.api.volume [assertion]
+      early skip of rewriting module: docker.transport.SSHHTTPAdapter [assertion]
+      early skip of rewriting module: docker.client [assertion]
+      early skip of rewriting module: docker.models [assertion]
+      early skip of rewriting module: docker.models.configs [assertion]
+      early skip of rewriting module: docker.models.resource [assertion]
+      early skip of rewriting module: docker.models.containers [assertion]
+      early skip of rewriting module: docker.models.images [assertion]
+      early skip of rewriting module: docker.models.networks [assertion]
+      early skip of rewriting module: docker.models.nodes [assertion]
+      early skip of rewriting module: docker.models.plugins [assertion]
+      early skip of rewriting module: docker.models.secrets [assertion]
+      early skip of rewriting module: docker.models.services [assertion]
+      early skip of rewriting module: docker.models.swarm [assertion]
+      early skip of rewriting module: docker.models.volumes [assertion]
+      early skip of rewriting module: docker.context [assertion]
+      early skip of rewriting module: docker.context.api [assertion]
+      early skip of rewriting module: docker.context.config [assertion]
+      early skip of rewriting module: docker.context.context [assertion]
+      early skip of rewriting module: testcontainers.core.config [assertion]
+      early skip of rewriting module: testcontainers.core.docker_client [assertion]
+      early skip of rewriting module: testcontainers.core.auth [assertion]
+      early skip of rewriting module: testcontainers.core.labels [assertion]
+      early skip of rewriting module: testcontainers.core.utils [assertion]
+      early skip of rewriting module: testcontainers.core.exceptions [assertion]
+      early skip of rewriting module: testcontainers.core.network [assertion]
+      early skip of rewriting module: testcontainers.core.waiting_utils [assertion]
+      early skip of rewriting module: wrapt [assertion]
+      early skip of rewriting module: wrapt.__wrapt__ [assertion]
+      early skip of rewriting module: wrapt.wrappers [assertion]
+      early skip of rewriting module: wrapt._wrappers [assertion]
+      early skip of rewriting module: wrapt.patches [assertion]
+      early skip of rewriting module: wrapt.weakrefs [assertion]
+      early skip of rewriting module: wrapt.decorators [assertion]
+      early skip of rewriting module: wrapt.arguments [assertion]
+      early skip of rewriting module: wrapt.importer [assertion]
+      early skip of rewriting module: todo_app.sqlmodel_orm [assertion]
+      early skip of rewriting module: todo_app.sqlmodel_orm.models [assertion]
+      early skip of rewriting module: todo_app.sqlmodel_orm.models.user_model [assertion]
+      early skip of rewriting module: pydantic._internal._std_types_schema [assertion]
+      early skip of rewriting module: pydantic._internal._serializers [assertion]
+      loading conftestmodule <module 'todo_app.tests.conftest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\src\\todo_app\\tests\\conftest.py'> [pluginmanage]
+        pytest_plugin_registered [hook]
+            plugin: <module 'todo_app.tests.conftest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\src\\todo_app\\tests\\conftest.py'>
+            plugin_name: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py
+            manager: <_pytest.config.PytestPluginManager object at 0x000001AD73D09C70>
+        finish pytest_plugin_registered --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package tests>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__init__.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\api
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\api
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\api
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Dir api> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package tests>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\conftest.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Dir constants> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Dir crud> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Dir factories> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\fixtures
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\fixtures
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\fixtures
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Dir fixtures> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests' lenresult=5 outcome='passed'> [hook]
+    genitems <Dir api> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir api>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir api>
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/api' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/api' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir constants> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir constants>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir constants>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\users.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir constants>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\constants\users.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/constants' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/constants' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir crud> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir crud>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir crud>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir crud>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Dir crud>
+              module_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+              path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py
+          finish pytest_pycollect_makemodule --> <Module test_users.py> [hook]
+        finish pytest_collect_file --> [<Module test_users.py>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/crud' lenresult=1 outcome='passed'> [hook]
+    genitems <Module test_users.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_users.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_users.py>
+      find_module called for: test_users [assertion]
+      matched test file 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\src\\todo_app\\tests\\crud\\test_users.py' [assertion]
+      found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\crud\test_users.py [assertion]
+      early skip of rewriting module: todo_app.tests.factories [assertion]
+      early skip of rewriting module: todo_app.tests.factories.users_factory [assertion]
+      early skip of rewriting module: factory [assertion]
+      early skip of rewriting module: factory.base [assertion]
+      early skip of rewriting module: factory.builder [assertion]
+      early skip of rewriting module: factory.enums [assertion]
+      early skip of rewriting module: factory.errors [assertion]
+      early skip of rewriting module: factory.utils [assertion]
+      early skip of rewriting module: factory.declarations [assertion]
+      early skip of rewriting module: factory.faker [assertion]
+      early skip of rewriting module: factory.helpers [assertion]
+      early skip of rewriting module: factory.alchemy [assertion]
+      early skip of rewriting module: factory.django [assertion]
+      early skip of rewriting module: django [assertion]
+      early skip of rewriting module: factory.mogo [assertion]
+      early skip of rewriting module: factory.mongoengine [assertion]
+      early skip of rewriting module: todo_app.internal [assertion]
+      early skip of rewriting module: todo_app.internal.encrypt [assertion]
+      early skip of rewriting module: passlib [assertion]
+      early skip of rewriting module: passlib.context [assertion]
+      early skip of rewriting module: passlib.exc [assertion]
+      early skip of rewriting module: passlib.registry [assertion]
+      early skip of rewriting module: passlib.ifc [assertion]
+      early skip of rewriting module: passlib.utils [assertion]
+      early skip of rewriting module: passlib.utils.compat [assertion]
+      early skip of rewriting module: timeit [assertion]
+      early skip of rewriting module: passlib.utils.binary [assertion]
+      early skip of rewriting module: passlib.utils.decor [assertion]
+      early skip of rewriting module: crypt [assertion]
+      early skip of rewriting module: _crypt [assertion]
+      early skip of rewriting module: passlib.utils.handlers [assertion]
+      early skip of rewriting module: configparser [assertion]
+      early skip of rewriting module: passlib.handlers [assertion]
+      early skip of rewriting module: passlib.handlers.bcrypt [assertion]
+      early skip of rewriting module: passlib.crypto [assertion]
+      early skip of rewriting module: passlib.crypto.digest [assertion]
+      early skip of rewriting module: fastpbkdf2 [assertion]
+      early skip of rewriting module: todo_app.tests.constants [assertion]
+      early skip of rewriting module: todo_app.tests.constants.users [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\_pytest\\assertion\\rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: pytest
+            obj: <module 'pytest' from 'C:\\Users\\BasVerburg\\Projects\\dip\\todo-app\\.venv\\Lib\\site-packages\\pytest\\__init__.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: Users
+            obj: <class 'todo_app.sqlmodel_orm.models.user_model.Users'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: UserFactory
+            obj: <UserFactory for <class 'todo_app.sqlmodel_orm.models.user_model.Users'>>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: session
+            obj: <function session at 0x000001AD7890A480>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_users.py>
+            name: test_create_user_with_factory
+            obj: <function test_create_user_with_factory at 0x000001AD7890A340>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x000001AD76462600>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_create_user_with_factory>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/crud/test_users.py' lenresult=1 outcome='passed'> [hook]
+    genitems <Function test_create_user_with_factory> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_create_user_with_factory>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/crud/test_users.py' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/crud' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir factories> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir factories>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir factories>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\__pycache__
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            collection_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\users_factory.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\users_factory.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir factories>
+            file_path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\users_factory.py
+            path: C:\Users\BasVerburg\Projects\dip\todo-app\src\todo_app\tests\factories\users_factory.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/factories' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/factories' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir fixtures> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir fixtures>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir fixtures>
+      finish pytest_make_collect_report --> <CollectReport 'src/todo_app/tests/fixtures' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests/fixtures' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app/tests' lenresult=5 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src/todo_app' lenresult=5 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'src' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport '.' lenresult=2 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          config: <_pytest.config.Config object at 0x000001AD734E8980>
+          items: [<Function test_create_user_with_factory>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x000001AD734E8980>
+            items: [<Function test_create_user_with_factory>]
+            start_path: C:\Users\BasVerburg\Projects\dip\todo-app
+            startdir: C:\Users\BasVerburg\Projects\dip\todo-app
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=1>
+      pytest_runtest_protocol [hook]
+          item: <Function test_create_user_with_factory>
+          nextitem: None
+        pytest_runtest_logstart [hook]
+            nodeid: src/todo_app/tests/crud/test_users.py::test_create_user_with_factory
+            location: ('src\\todo_app\\tests\\crud\\test_users.py', 18, 'test_create_user_with_factory')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_create_user_with_factory>
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='_session_faker' scope='session' baseid=''>
+              request: <SubRequest '_session_faker' for <Function test_create_user_with_factory>>
+          matched marked file 'faker.providers.address.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.address.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\address\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.address.en' (from 'faker') [assertion]
+          find_module called for: faker.providers.address.en [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\address\en\__init__.py [assertion]
+          matched marked file 'faker.providers.automotive.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.automotive.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\automotive\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.bank.en_GB' (from 'faker') [assertion]
+          find_module called for: faker.providers.bank.en_GB [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\bank\en_GB\__init__.py [assertion]
+          matched marked file 'faker.providers.barcode.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.barcode.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\barcode\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.color.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.color.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\color\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.company.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.company.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\company\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.credit_card.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.credit_card.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\credit_card\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.currency.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.currency.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\currency\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.date_time.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.date_time.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\date_time\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.geo.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.geo.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\geo\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.internet.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.internet.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\internet\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.isbn.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.isbn.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\isbn\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.job.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.job.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\job\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.misc.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.misc.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\misc\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.passport.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.passport.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\passport\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.person.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.person.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\person\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.phone_number.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.phone_number.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\phone_number\en_US\__init__.py [assertion]
+          matched marked file 'faker.providers.ssn.en_US' (from 'faker') [assertion]
+          find_module called for: faker.providers.ssn.en_US [assertion]
+          found cached rewritten pyc for C:\Users\BasVerburg\Projects\dip\todo-app\.venv\Lib\site-packages\faker\providers\ssn\en_US\__init__.py [assertion]
+          finish pytest_fixture_setup --> <faker.proxy.Faker object at 0x000001AD78A13320> [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='postgres_db' scope='session' baseid='src/todo_app/tests'>
+              request: <SubRequest 'postgres_db' for <Function test_create_user_with_factory>>
+          early skip of rewriting module: netrc [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.array [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.operators [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.asyncpg [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.json [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.ranges [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.base [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.pg_catalog [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.types [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.ext [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.hstore [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.named_types [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.pg8000 [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.psycopg [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql._psycopg_common [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.psycopg2 [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.psycopg2cffi [assertion]
+          early skip of rewriting module: sqlalchemy.dialects.postgresql.dml [assertion]
+          early skip of rewriting module: sqlalchemy.dialects._typing [assertion]
+          early skip of rewriting module: psycopg2.extras [assertion]
+          early skip of rewriting module: psycopg2._ipaddress [assertion]
+          finish pytest_fixture_setup --> (sessionmaker(class_='Session', bind=Engine(postgresql+psycopg2://test:***@localhost:60387/test), autoflush=True, expire_on_commit=True), Engine(postgresql+psycopg2://test:***@localhost:60387/test)) [hook]
+          pytest_fixture_setup [hook]
+              fixturedef: <FixtureDef argname='session' scope='function' baseid='src/todo_app/tests/crud/test_users.py'>
+              request: <SubRequest 'session' for <Function test_create_user_with_factory>>
+          finish pytest_fixture_setup --> <sqlalchemy.orm.session.Session object at 0x000001AD78ACEA20> [hook]
+        finish pytest_runtest_setup --> None [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_create_user_with_factory>
+            call: <CallInfo when='setup' result: None>
+        finish pytest_runtest_makereport --> <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001AD734E8980>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_create_user_with_factory>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_create_user_with_factory>
+          early skip of rewriting module: bcrypt [assertion]
+          early skip of rewriting module: bcrypt._bcrypt [assertion]
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> None [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_create_user_with_factory>
+            call: <CallInfo when='call' result: None>
+        finish pytest_runtest_makereport --> <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='call' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001AD734E8980>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_create_user_with_factory>
+            nextitem: None
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='session' scope='function' baseid='src/todo_app/tests/crud/test_users.py'>
+              request: <SubRequest 'session' for <Function test_create_user_with_factory>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='session' scope='function' baseid='src/todo_app/tests/crud/test_users.py'>
+              request: <SubRequest 'session' for <Function test_create_user_with_factory>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='postgres_db' scope='session' baseid='src/todo_app/tests'>
+              request: <SubRequest 'postgres_db' for <Function test_create_user_with_factory>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+          pytest_fixture_post_finalizer [hook]
+              fixturedef: <FixtureDef argname='_session_faker' scope='session' baseid=''>
+              request: <SubRequest '_session_faker' for <Function test_create_user_with_factory>>
+          finish pytest_fixture_post_finalizer --> [] [hook]
+        finish pytest_runtest_teardown --> None [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_create_user_with_factory>
+            call: <CallInfo when='teardown' result: None>
+        finish pytest_runtest_makereport --> <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'src/todo_app/tests/crud/test_users.py::test_create_user_with_factory' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x000001AD734E8980>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: src/todo_app/tests/crud/test_users.py::test_create_user_with_factory
+            location: ('src\\todo_app\\tests\\crud\\test_users.py', 18, 'test_create_user_with_factory')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session  exitstatus=0 testsfailed=0 testscollected=1>
+        exitstatus: 0
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x000001AD7647DB50>
+          exitstatus: 0
+          config: <_pytest.config.Config object at 0x000001AD734E8980>
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x000001AD734E8980>
+    finish pytest_unconfigure --> [] [hook]

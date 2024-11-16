@@ -3,8 +3,8 @@ from datetime import (
     date as date_dtype,
 )  # change name date because field is also named date
 
-from ..database import engine
-from .user_model import Users
+from todo_app.sqlmodel_orm.database import engine
+from todo_app.sqlmodel_orm.models.user_model import Users
 
 
 class TodoBase(SQLModel):

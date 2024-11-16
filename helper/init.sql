@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
     --username VARCHAR(100) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
-    hashed_password VARCHAR(255),
+    password VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -23,10 +23,10 @@ CREATE TABLE IF NOT EXISTS todo (
 
 
 -- Voeg voorbeeldgebruikers toe
-INSERT INTO users (email) 
+INSERT INTO users (email, password) 
 VALUES 
-('bas@example.com'),
-('jane@example.com');
+('bas@example.com', 'geheim'),
+('jane@example.com', 'geheim');
 
 -- Voeg to-do items toe voor deze gebruikers
 INSERT INTO todo (user_id, date, task, done) 

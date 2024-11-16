@@ -2,7 +2,7 @@ from typing import Annotated
 from fastapi import Depends
 from sqlmodel import Session
 
-from .sqlmodel_orm.database import engine
+from todo_app.sqlmodel_orm.database import engine
 
 
 def get_session():
