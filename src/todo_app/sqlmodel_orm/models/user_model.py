@@ -28,7 +28,7 @@ class UsersPublic(UserBase):
 
 
 class UsersCreate(UserBase):
-    email: str
+    email: EmailStr
     password: str
 
     @field_validator("password")
@@ -40,7 +40,6 @@ class UsersCreate(UserBase):
         return password
 
 
-class UsersUpdate(UserBase):
-    email: str | None = None
+class UsersUpdate(SQLModel):
     password: str | None = None
-    created_at: date | None = None
+

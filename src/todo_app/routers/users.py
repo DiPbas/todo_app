@@ -10,7 +10,7 @@ from todo_app.sqlmodel_orm.models.user_model import (
 )
 from todo_app.dependencies import SessionDep
 from todo_app.internal.encrypt import hash_password
-from todo_app.internal.exceptions import NotFoundError
+from todo_app.internal.helper import entity_exists
 
 router = APIRouter(prefix="/users", tags=["users"])
 
@@ -38,30 +38,26 @@ def read_users(
 
 @router.get("/{user_id}", response_model=UsersPublic)
 def read_user(user_id: int, session: SessionDep):
-    user = session.get(Users, user_id)
-    if not user:
-        raise NotFoundError(detail=f"User with id: {user_id} not found")
+    user = entity_exists(entity_id=user_id,model=Users, session=session)
     return user
 
 
 @router.patch("/{user_id}", response_model=UsersPublic)
-def update_user(user_id: int, user: UsersUpdate, session: SessionDep):
-    user_db = session.get(Users, user_id)
-    if not user_db:
-        raise NotFoundError(detail=f"User with id: {user_id} not found")
-    user_data = user.model_dump(exclude_unset=True)
-    user_db.sqlmodel_update(user_data)
-    session.add(user_db)
+def update_user(user_id: int, user_update: UsersUpdate, session: SessionDep):
+    user = entity_exists(entity_id=user_id,model=Users, session=session)
+
+    update_data = user_update.model_dump(exclude_unset=True)
+    user.sqlmodel_update(update_data)
+    
+    session.add(user)
     session.commit()
-    session.refresh(user_db)
-    return user_db
+    session.refresh(user)
+    return user
 
 
 @router.delete("/{user_id}")
 def delete_user(user_id: int, session: SessionDep):
-    user = session.get(Users, user_id)
-    if not user:
-        raise NotFoundError(detail=f"User with id: {user_id} not found")
+    user = entity_exists(entity_id=user_id,model=Users, session=session)
     session.delete(user)
     session.commit()
     return {"ok": True}

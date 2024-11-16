@@ -6,21 +6,18 @@ from todo_app.sqlmodel_orm.models.todo_model import Todo, TodoCreate, TodoRead, 
 from todo_app.dependencies import SessionDep
 from todo_app.sqlmodel_orm.models.user_model import Users
 from todo_app.internal.exceptions import NotFoundError
-
+from todo_app.internal.helper import entity_exists
 router = APIRouter(prefix="/todos", tags=["todos"])
 
 
 @router.post("/", response_model=TodoRead)
 def create_todo(todo: TodoCreate, session: SessionDep) -> Todo:
-    user = session.get(Users, todo.user_id)
-    if not user:
-        raise NotFoundError(detail=f"User with id: {todo.user_id} not found")
-
-    db_todo = Todo.model_validate(todo)
-    session.add(db_todo)
+    todo = entity_exists(entity_id=todo.user_id, model=Todo, session=session)
+    todo = Todo.model_validate(todo)
+    session.add(todo)
     session.commit()
-    session.refresh(db_todo)
-    return db_todo
+    session.refresh(todo)
+    return todo
 
 
 @router.get("/", response_model=list[TodoRead])
@@ -42,33 +39,24 @@ def read_todos(
 
 @router.get("/{todo_id}", response_model=TodoRead)
 def read_todo(todo_id: int, session: SessionDep):
-    todo = session.get(Todo, todo_id)
-    if not todo:
-        raise NotFoundError(detail=f"TODO List with id: {todo_id} not found")
+    todo = entity_exists(entity_id=todo_id,model=Todo, session=session)
     return todo
 
 
 @router.patch("/{todo_id}", response_model=TodoRead)
-def update_todo(todo_id: int, todo: TodoUpdate, session: SessionDep):
-    db_todo = session.get(Todo, todo_id)
-    if not db_todo:
-        raise NotFoundError(detail=f"TODO List with id: {todo_id} not found")
-
-    todo_data = todo.model_dump(exclude_unset=True)
-    db_todo.sqlmodel_update(todo_data)
-
-    session.add(db_todo)
+def update_todo(todo_id: int, todo_update: TodoUpdate, session: SessionDep):
+    todo = entity_exists(entity_id=todo_id,model=Todo, session=session)
+    todo_data = todo_update.model_dump(exclude_unset=True)
+    todo.sqlmodel_update(todo_data)
+    session.add(todo)
     session.commit()
-    session.refresh(db_todo)
-    return db_todo
+    session.refresh(todo)
+    return todo
 
 
 @router.delete("/{todo_id}")
 def delete_todo(todo_id: int, session: SessionDep):
-    todo = session.get(Todo, todo_id)
-    if not todo:
-        raise NotFoundError(detail=f"TODO List with id: {todo_id} not found")
-
+    todo = entity_exists(entity_id=todo_id,model=Todo, session=session)
     session.delete(todo)
     session.commit()
     return {"ok": True}
