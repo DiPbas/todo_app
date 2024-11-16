@@ -1,23 +1,22 @@
 import pytest
 
-from todo_app.tests.factories.users_factory import UserFactory
+from tests.setup.factories.users_factory import UserFactory
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="session", autouse=True)
 def setup_db(postgres_db):
     # Fixture om de sessie op te zetten
     Session, engine = postgres_db
-    # Zorg dat de factory de juiste sessie gebruikt
+    
     UserFactory._meta.sqlalchemy_session = Session()
 
     yield Session()
 
-    # Sluit de sessie na elke test af
     UserFactory._meta.sqlalchemy_session.close()
-    engine.dispose()  # Sluit de database connecties af
+    engine.dispose()
 
 
-def test_password_isEcrypted_after_create(test_api, setup_db):
+def test_password_isEcrypted_after_create(test_api):
     # Arrange
     user = UserFactory()
 
