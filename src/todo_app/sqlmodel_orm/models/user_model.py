@@ -3,13 +3,15 @@ from sqlmodel import SQLModel, Field, Relationship
 from datetime import date
 from typing import TYPE_CHECKING
 from pydantic import EmailStr, field_validator
+from todo_app.sqlmodel_orm.models.base_model_metadata import BaseModel 
 
 # Voorkom circulaire referentie, maar wel met type hinting in model naar foreign-key relatie tussen models
 if TYPE_CHECKING:
     from todo_app.sqlmodel_orm.models.todo_model import Todo
 
 
-class UserBase(SQLModel):
+
+class UserBase(BaseModel):
     email: EmailStr
 
 

@@ -5,9 +5,9 @@ from datetime import (
 
 from todo_app.sqlmodel_orm.database import engine
 from todo_app.sqlmodel_orm.models.user_model import Users
+from todo_app.sqlmodel_orm.models.base_model_metadata import BaseModel 
 
-
-class TodoBase(SQLModel):
+class TodoBase(BaseModel):
     task: str
     done: bool | None = False
 
