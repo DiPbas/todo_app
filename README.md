@@ -2,7 +2,6 @@
 
 Start project
 
-docker compose up -d postgres
 dev: rye run dev
 prd: rye run prd
 

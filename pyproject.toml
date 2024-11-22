@@ -9,12 +9,12 @@ dependencies = [
     "fastapi[standard]>=0.115.0",
     "sqlalchemy>=2.0.35",
     "sqlmodel>=0.0.22",
-    "psycopg2",
     "pytest>=8.3.3",
     "testcontainers>=4.8.2",
     "factory-boy>=3.3.1",
     "httpx>=0.27.2",
     "alembic>=1.14.0",
+    "psycopg2>=2.9.10",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -32,6 +32,9 @@ dev-dependencies = []
 dev = {chain = ["dev:postgres", "dev:fastapi"]}
 "dev:fastapi" = "fastapi dev src/todo_app/main.py"
 "dev:postgres" = "docker compose up -d postgres"
+
+prd = {chain = ["prd:postgres"]}
+"prd:postgres" = "docker compose up -d"
 
 [tool.hatch.metadata]
 allow-direct-references = true
